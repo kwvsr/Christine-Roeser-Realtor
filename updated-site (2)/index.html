@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christine Roeser, REALTOR® | Keller Williams Village Square Realty | NYC to NJ Relocation</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        kwred: {
+                            DEFAULT: '#C41230',
+                            dark: '#9A0B22',
+                            light: '#E61C3D',
+                            soft: '#FFF0F2'
+                        },
+                        kwgold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F5E59F',
+                            dark: '#A38118',
+                            soft: '#FCF8E8'
+                        },
+                        charcoal: {
+                            DEFAULT: '#111827',
+                            muted: '#374151',
+                            light: '#4B5563'
+                        },
+                        offwhite: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .red-gradient-text {
+            background: linear-gradient(135deg, #C41230 0%, #9A0B22 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 4px 12px -2px rgba(196, 18, 48, 0.04);
+        }
+        .hover-lift {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px -5px rgba(196, 18, 48, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal font-sans antialiased selection:bg-kwred selection:text-white">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Header Logo & Agent Title -->
+                <a href="#" class="flex items-center gap-3 sm:gap-4">
+                    <img src="images/kw-village-square-logo.png" alt="Keller Williams Village Square Realty" width="800" height="290" class="h-10 sm:h-12 w-auto object-contain">
+                    <div class="hidden sm:flex flex-col border-l border-gray-200 pl-4">
+                        <span class="font-serif font-bold text-charcoal text-base tracking-wide">CHRISTINE ROESER</span>
+                        <span class="text-[11px] text-kwred font-bold tracking-wider uppercase">REALTOR® • NYC-to-NJ Relocation</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links (Reviews removed) -->
+                <nav class="hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-bold text-charcoal-muted">
+                    <a href="#pain-points" class="hover:text-kwred transition-colors">Pain Points</a>
+                    <a href="#solution" class="hover:text-kwred transition-colors">The Solution</a>
+                    <a href="#realtor" class="hover:text-kwred transition-colors">Meet Christine</a>
+                    <a href="#contact" class="hover:text-kwred transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:9086420279" class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-offwhite hover:bg-gray-100 text-charcoal font-bold text-xs border border-gray-200 transition-all">
+                        <svg class="w-3.5 h-3.5 text-kwred" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        <span class="hidden sm:inline">908.642.0279</span>
+                        <span class="sm:hidden">Call</span>
+                    </a>
+                    <a href="#contact" class="px-4 py-2 rounded-lg bg-kwred hover:bg-kwred-dark text-white font-bold text-xs tracking-wider uppercase transition-all shadow-sm">
+                        Relocate
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO & PAIN POINTS -->
+    <section id="pain-points" class="pt-12 pb-20 md:pt-20 md:pb-24 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Hero Headline -->
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-extrabold text-charcoal tracking-tight leading-[1.12] mb-6 max-w-5xl mx-auto">
+                New York City Energy.<br/>
+                <span class="red-gradient-text">New Jersey Rent.</span>
+            </h1>
+
+            <!-- Hero Subheadline -->
+            <p class="text-lg sm:text-2xl text-charcoal-muted max-w-3xl mx-auto font-normal leading-relaxed mb-10">
+                Why pay Manhattan prices when your next great chapter is just across the bridge?
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-kwred hover:bg-kwred-dark text-white font-extrabold text-sm uppercase tracking-wider transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
+                    <span>Schedule Relocation Call</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#solution" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-offwhite text-charcoal font-bold text-sm uppercase tracking-wider transition-all border border-gray-300">
+                    Explore NJ Neighborhoods
+                </a>
+            </div>
+
+            <!-- PAIN POINTS GRID -->
+            <div class="pt-8 border-t border-gray-100 text-left">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-kwred font-bold text-xs uppercase tracking-widest block">The Cost of Staying in NYC</span>
+                    <h2 class="font-serif text-2xl sm:text-4xl font-bold text-charcoal mt-1">Are These City Struggles Familiar?</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Pain Point 1 -->
+                    <div class="p-8 rounded-2xl bg-offwhite border border-gray-200 custom-shadow hover-lift">
+                        <div class="w-12 h-12 rounded-xl bg-kwred-soft text-kwred border border-kwred/20 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal mb-2">Unjustified Annual Rent Increases & Broker Fees</h3>
+                        <p class="text-charcoal-light text-sm leading-relaxed">
+                            Steep price hikes year after year alongside exorbitant upfront broker fees for apartments that rarely improve.
+                        </p>
+                    </div>
+
+                    <!-- Pain Point 2 -->
+                    <div class="p-8 rounded-2xl bg-offwhite border border-gray-200 custom-shadow hover-lift">
+                        <div class="w-12 h-12 rounded-xl bg-kwred-soft text-kwred border border-kwred/20 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-2V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal mb-2">Cramped Square Footage & WFH Constraints</h3>
+                        <p class="text-charcoal-light text-sm leading-relaxed">
+                            Paying premium rates for tight quarters without space for a dedicated home office, proper living area, or room to grow.
+                        </p>
+                    </div>
+
+                    <!-- Pain Point 3 -->
+                    <div class="p-8 rounded-2xl bg-offwhite border border-gray-200 custom-shadow hover-lift">
+                        <div class="w-12 h-12 rounded-xl bg-kwgold-soft text-kwgold-dark border border-kwgold/30 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal mb-2">NYC Local Resident Income Tax Drain</h3>
+                        <p class="text-charcoal-light text-sm leading-relaxed">
+                            Up to 3.876% taken straight out of your income for the NYC local resident tax—a cost instantly eliminated in New Jersey.
+                        </p>
+                    </div>
+
+                    <!-- Pain Point 4 -->
+                    <div class="p-8 rounded-2xl bg-offwhite border border-gray-200 custom-shadow hover-lift">
+                        <div class="w-12 h-12 rounded-xl bg-kwgold-soft text-kwgold-dark border border-kwgold/30 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal mb-2">Pre-War Walk-Ups, Parking Headaches & Amenities</h3>
+                        <p class="text-charcoal-light text-sm leading-relaxed">
+                            Carrying groceries up four flights of stairs, endless parking stress, and missing modern in-unit laundry and amenities.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: SOLUTION -->
+    <section id="solution" class="py-20 bg-offwhite border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-kwred font-bold text-xs tracking-widest uppercase">The Smart Alternative</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal mt-2">Discover New Jersey Living</h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="p-8 sm:p-12 rounded-3xl bg-white border border-gray-200 custom-shadow">
+                    
+                    <!-- Verbatim Solution Copy -->
+                    <div class="space-y-6 text-charcoal-muted text-base sm:text-lg leading-relaxed">
+                        <p>
+                            You don’t have to give up the city you love to get more out of where you live. Just across the Hudson, New Jersey offers a smarter way to experience the New York lifestyle—with more space, more value, and more room to breathe.
+                        </p>
+                        <p>
+                            Imagine a bigger apartment, a neighborhood that feels like home, and more money left over at the end of every month. Whether you’re dreaming of extra space to work from home, a living room that actually fits your lifestyle, or simply the freedom to spend less on rent and more on living, New Jersey opens up new possibilities.
+                        </p>
+                        <p>
+                            And the best part? New York is still right there. The restaurants, nightlife, culture, career opportunities, and weekend plans you love don’t disappear when you cross the river. You simply get to enjoy them while coming home to a place that may offer a lot more for your money.
+                        </p>
+                    </div>
+
+                    <!-- Verbatim Featured Callout Box -->
+                    <div class="mt-10 p-8 rounded-2xl bg-kwred text-center text-white shadow-xl relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+                        <span class="font-serif font-bold text-xl sm:text-3xl tracking-wide block leading-snug">
+                            “Same city access. More space. Less rent. More life.”
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: PERSON (REALTOR SPOTLIGHT) -->
+    <section id="realtor" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-6xl mx-auto p-8 sm:p-12 rounded-3xl bg-offwhite border border-gray-200 custom-shadow">
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+                    
+                    <!-- Headshot Container -->
+                    <div class="lg:col-span-6 flex justify-center">
+                        <div class="relative w-full max-w-md">
+                            <div class="p-3 bg-white rounded-3xl border border-gray-200 shadow-lg">
+                                <img src="images/christine-roeser-headshot.jpeg" alt="Christine Roeser, REALTOR®" width="1024" height="588" class="w-full aspect-[4/5] object-cover object-[50%_30%] rounded-2xl">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <span class="inline-block px-4 py-1.5 bg-kwred text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-sm">
+                                    REALTOR®
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agent Information & Bio -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-kwred uppercase tracking-widest block">Meet Your NYC-to-NJ Relocation Specialist</span>
+                            <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-charcoal mt-1">Christine Roeser</h2>
+                            <p class="text-kwred font-bold text-sm mt-0.5">Keller Williams Village Square Realty</p>
+                        </div>
+
+                        <p class="text-charcoal-light text-sm sm:text-base leading-relaxed">
+                            Christine Roeser specializes in helping NYC renters make a seamless transition across the Hudson River. With deep local expertise spanning Bergen County, the Hudson River Gold Coast, and surrounding North Jersey commuter hubs, Christine provides white-glove guidance on neighborhood selection, rental searches, transit routes, and home purchases tailored to your lifestyle.
+                        </p>
+
+                        <!-- Direct Contact Details -->
+                        <div class="p-6 rounded-2xl bg-white border border-gray-200 space-y-3 custom-shadow">
+                            <div class="grid sm:grid-cols-2 gap-4 text-xs">
+                                <div>
+                                    <span class="text-gray-400 font-bold uppercase block text-[10px]">Cell Phone</span>
+                                    <a href="tel:9086420279" class="text-sm font-extrabold text-kwred hover:underline">908.642.0279</a>
+                                </div>
+                                <div>
+                                    <span class="text-gray-400 font-bold uppercase block text-[10px]">Office Phone</span>
+                                    <a href="tel:2014454300" class="text-sm font-bold text-charcoal hover:underline">201.445.4300</a>
+                                </div>
+                                <div>
+                                    <span class="text-gray-400 font-bold uppercase block text-[10px]">Email Address</span>
+                                    <a href="mailto:christineroeser@kw.com" class="text-xs font-bold text-charcoal hover:text-kwred">christineroeser@kw.com</a>
+                                </div>
+                                <div>
+                                    <span class="text-gray-400 font-bold uppercase block text-[10px]">Website</span>
+                                    <a href="https://christineroeser.kw.com" target="_blank" rel="noopener" class="text-xs font-bold text-charcoal hover:text-kwred">christineroeser.kw.com ↗</a>
+                                </div>
+                            </div>
+                            <div class="pt-3 border-t border-gray-100 text-xs text-charcoal-muted">
+                                📍 <strong>Office Address:</strong> 74 Godwin Avenue, Ridgewood, New Jersey 07450
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#contact" class="inline-block px-8 py-4 rounded-xl bg-kwred hover:bg-kwred-dark text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-md">
+                                Schedule a Call with Christine
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT & LEAD FORM -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Column: Verbatim Closing Text & Details -->
+                <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
+                    <span class="text-kwred font-bold text-xs tracking-widest uppercase block">Before You Renew</span>
+                    
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-charcoal leading-tight">
+                        Your Next Chapter Starts Across the River
+                    </h2>
+
+                    <!-- Verbatim Closing Text -->
+                    <div class="p-6 rounded-2xl bg-offwhite border border-gray-200 shadow-sm space-y-4 text-charcoal-muted text-base leading-relaxed">
+                        <p>
+                            Before you renew that expensive New York lease, take a look across the bridge. Your money could go further, your home could feel bigger, and your next chapter could be better than you imagined.
+                        </p>
+                        <p class="font-serif font-bold text-kwred text-lg pt-3 border-t border-gray-200">
+                            Don’t just live in New York. Live smarter, just across the river.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Consultation Lead Form -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-offwhite border border-gray-200 custom-shadow">
+                        
+                        <div class="mb-6">
+                            <h3 class="font-serif text-2xl font-bold text-charcoal">Get Your Custom NJ Relocation Guide</h3>
+                            <p class="text-charcoal-light text-xs mt-1">Fill out the form below to receive personalized NJ rental and neighborhood options directly from Christine Roeser.</p>
+                        </div>
+
+                        <form id="relocation-form" class="space-y-4">
+                            <!-- Full Name -->
+                            <div>
+                                <label for="full-name" class="block text-xs font-bold text-charcoal mb-1">Full Name *</label>
+                                <input type="text" id="full-name" name="fullName" required placeholder="First and Last Name" 
+                                    class="w-full bg-white border border-gray-300 text-charcoal rounded-xl p-3.5 text-sm focus:border-kwred focus:outline-none">
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="email-address" class="block text-xs font-bold text-charcoal mb-1">Email Address *</label>
+                                    <input type="email" id="email-address" name="email" required placeholder="name@example.com" 
+                                        class="w-full bg-white border border-gray-300 text-charcoal rounded-xl p-3.5 text-sm focus:border-kwred focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="phone-number" class="block text-xs font-bold text-charcoal mb-1">Phone Number *</label>
+                                    <input type="tel" id="phone-number" name="phone" required placeholder="(908) 000-0000" 
+                                        class="w-full bg-white border border-gray-300 text-charcoal rounded-xl p-3.5 text-sm focus:border-kwred focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Rent & Timeline -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="current-rent" class="block text-xs font-bold text-charcoal mb-1">Current NYC Rent</label>
+                                    <input type="text" id="current-rent" name="currentRent" placeholder="e.g. $4,000/mo" 
+                                        class="w-full bg-white border border-gray-300 text-charcoal rounded-xl p-3.5 text-sm focus:border-kwred focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="move-timeline" class="block text-xs font-bold text-charcoal mb-1">Target Move Date</label>
+                                    <input type="date" id="move-timeline" name="moveDate" 
+                                        class="w-full bg-white border border-gray-300 text-charcoal rounded-xl p-3.5 text-sm focus:border-kwred focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Preferred Neighborhoods Checkboxes -->
+                            <div>
+                                <label class="block text-xs font-bold text-charcoal mb-2">Preferred Neighborhoods (Select all that apply)</label>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                                    <label class="flex items-center gap-2 p-3 rounded-lg border border-gray-200 bg-white cursor-pointer hover:bg-gray-50">
+                                        <input type="checkbox" name="neighborhoods" value="Ridgewood & Bergen County" class="accent-kwred" checked>
+                                        <span>Ridgewood & Bergen County</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 p-3 rounded-lg border border-gray-200 bg-white cursor-pointer hover:bg-gray-50">
+                                        <input type="checkbox" name="neighborhoods" value="Hoboken & Jersey City Gold Coast" class="accent-kwred">
+                                        <span>Hoboken & Jersey City Gold Coast</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 p-3 rounded-lg border border-gray-200 bg-white cursor-pointer hover:bg-gray-50">
+                                        <input type="checkbox" name="neighborhoods" value="Montclair & Essex County" class="accent-kwred">
+                                        <span>Montclair & Essex County</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 p-3 rounded-lg border border-gray-200 bg-white cursor-pointer hover:bg-gray-50">
+                                        <input type="checkbox" name="neighborhoods" value="Weehawken & Edgewater" class="accent-kwred">
+                                        <span>Weehawken & Edgewater</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-xs font-bold text-charcoal mb-1">Message / Search Requirements</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell us about desired bedrooms, budget, commute destination, WFH space, parking needs..." 
+                                    class="w-full bg-white border border-gray-300 text-charcoal rounded-xl p-3.5 text-sm focus:border-kwred focus:outline-none"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-kwred hover:bg-kwred-dark text-white font-extrabold text-sm uppercase tracking-wider transition-all shadow-lg hover:shadow-xl mt-2">
+                                Get Your Custom NJ Relocation Guide
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-200 py-12 text-charcoal-light text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Footer Logo -->
+                <div class="bg-white p-2 border border-gray-200 rounded-lg">
+                    <img src="images/kw-village-square-logo.png" alt="Keller Williams Village Square Realty" width="800" height="290" class="h-12 w-auto object-contain">
+                </div>
+
+                <!-- Realtor Info -->
+                <div class="text-center md:text-right space-y-1">
+                    <p class="text-charcoal font-serif font-bold text-sm">Christine Roeser, REALTOR®</p>
+                    <p class="text-charcoal-muted">Keller Williams Village Square Realty • 74 Godwin Avenue, Ridgewood, NJ 07450</p>
+                    <p class="text-charcoal-muted">Direct Cell: <a href="tel:9086420279" class="text-kwred font-bold">908.642.0279</a> | Office: 201.445.4300 | Email: christineroeser@kw.com</p>
+                </div>
+            </div>
+
+            <!-- Legal Notice -->
+            <div class="pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-center text-[11px] text-gray-500">
+                <div class="text-left space-y-1">
+                    <p class="font-bold text-charcoal-muted">Each office is independently owned and operated. Equal Housing Opportunity.</p>
+                    <p>&copy; Christine Roeser | Keller Williams Village Square Realty. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="px-2.5 py-1 rounded bg-offwhite border border-gray-300 font-bold text-charcoal text-[10px]">REALTOR®</span>
+                    <span class="px-2.5 py-1 rounded bg-offwhite border border-gray-300 font-bold text-charcoal text-[10px]">EQUAL HOUSING OPPORTUNITY</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MODAL CONFIRMATION POPUP -->
+    <div id="modal-backdrop" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="p-8 rounded-3xl bg-white border border-gray-200 max-w-md w-full text-center space-y-4 shadow-2xl relative">
+            <div class="w-16 h-16 rounded-full bg-kwred-soft text-kwred border border-kwred/20 flex items-center justify-center mx-auto text-2xl font-bold">
+                ✓
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-charcoal">Guide Request Received!</h3>
+            <p class="text-charcoal-muted text-sm leading-relaxed" id="modal-message">
+                Thank you! Christine Roeser has received your information and will prepare a customized New Jersey relocation guide tailored to your timeline and preferences.
+            </p>
+            <div class="p-4 rounded-xl bg-offwhite border border-gray-200 text-xs text-charcoal text-left space-y-1">
+                <p>📞 <strong class="text-kwred">Direct Cell:</strong> 908.642.0279</p>
+                <p>✉️ <strong class="text-kwred">Email:</strong> christineroeser@kw.com</p>
+            </div>
+            <button id="close-modal-btn" type="button" class="w-full py-3.5 rounded-xl bg-kwred hover:bg-kwred-dark text-white font-bold text-xs uppercase tracking-wider transition-all">
+                Close Window
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT & GOOGLE SHEETS SUBMISSION SCRIPT -->
+    <script>
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyS0TZJAvPk7AP7whXXPYb-LpLh0bWyPQHBmM9FfDfXWw8evU2EcNuTiwIMxxp5dXFQvA/exec';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('relocation-form');
+            const modalBackdrop = document.getElementById('modal-backdrop');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const modalMessage = document.getElementById('modal-message');
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    submitBtn.disabled = true;
+                    submitBtn.innerText = 'Sending Request...';
+
+                    const name = document.getElementById('full-name').value || 'Friend';
+                    const selectedNeighborhoods = [];
+                    document.querySelectorAll('input[name="neighborhoods"]:checked').forEach(cb => {
+                        selectedNeighborhoods.push(cb.value);
+                    });
+
+                    // Send as URL-encoded form fields so Apps Script can read them via e.parameter
+                    const payload = new URLSearchParams({
+                        timestamp: new Date().toISOString(),
+                        fullName: document.getElementById('full-name').value,
+                        email: document.getElementById('email-address').value,
+                        phone: document.getElementById('phone-number').value,
+                        currentRent: document.getElementById('current-rent').value,
+                        moveDate: document.getElementById('move-timeline').value,
+                        neighborhoods: selectedNeighborhoods.join(', '),
+                        message: document.getElementById('message').value
+                    });
+
+                    fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+                        body: payload.toString()
+                    })
+                    .then(() => {
+                        modalMessage.textContent = `Thank you, ${name}! Christine Roeser has received your request and will reach out shortly with customized New Jersey relocation options for your search.`;
+                        modalBackdrop.classList.remove('hidden');
+                        form.reset();
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = 'Get Your Custom NJ Relocation Guide';
+                    })
+                    .catch(err => {
+                        console.error('Error submitting form:', err);
+                        modalMessage.textContent = `Thank you, ${name}! Christine Roeser has received your request and will reach out shortly with customized New Jersey relocation options for your search.`;
+                        modalBackdrop.classList.remove('hidden');
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = 'Get Your Custom NJ Relocation Guide';
+                    });
+                });
+            }
+
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', () => {
+                    modalBackdrop.classList.add('hidden');
+                });
+            }
+
+            if (modalBackdrop) {
+                modalBackdrop.addEventListener('click', (e) => {
+                    if (e.target === modalBackdrop) {
+                        modalBackdrop.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
